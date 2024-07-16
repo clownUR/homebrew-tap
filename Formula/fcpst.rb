@@ -31,9 +31,9 @@ class Fcpst < Formula
 
   def install
     bin.install "fcpst"
-    bash_completion.install "completions/bash/sibling.bash" if build.with? "completions"
-    fish_completion.install "completions/fish/sibling.bash" if build.with? "completions"
-    zsh_completion.install "completions/zsh/sibling.bash" if build.with? "completions"
+    bash_completion.install "completions/bash/fcpst" if build.with? "completions"
+    fish_completion.install "completions/fish/fcpst" if build.with? "completions"
+    zsh_completion.install "completions/zsh/_fcpst" if build.with? "completions"
   end
 
   test do
