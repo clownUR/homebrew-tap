@@ -5,7 +5,7 @@ This is a [Homebrew tap](https://docs.brew.sh/Taps) for various tools and utilit
 ## Products List
 | Products | URL | Formula | Description | Version | Release Date |
 | ------- | --- | ------- | ----------- | ------- | ------------ |
-| fcpst | [:octocat:](https://github.com/clownUR/fcpst) | `clonwUR/tap/fcpst` | fcpst is Universal Compressor | 0.1.0 | 2024-05-01
+| fcpst | [:octocat:](https://github.com/clownUR/fcpst) | `clonwUR/tap/fcpst` | fcpst is Universal Compressor | 0.1.0 | 2024-07-16
 
  ## Installation
 
