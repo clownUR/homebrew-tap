@@ -23,14 +23,15 @@ class Fcpst < Formula
     url "https://github.com/clownUR/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_linux_arm64.tar.gz"
     sha256 "334a660d3c5ab128d5f0712cacb60a032a85b1909949ba15fcf0a6f5023ea9d3"
   end
-end
-def install
-  bin.install "fcpst"
-  bash_completion.install "completions/bash/sibling.bash" if build.with? "completions"
-  fish_completion.install "completions/fish/sibling.bash" if build.with? "completions"
-  zsh_completion.install "completions/zsh/sibling.bash" if build.with? "completions"
-end
 
-test do
-  system "#{bin}/fcpst --version"
-done
+  def install
+    bin.install "fcpst"
+    bash_completion.install "completions/bash/sibling.bash" if build.with? "completions"
+    fish_completion.install "completions/fish/sibling.bash" if build.with? "completions"
+    zsh_completion.install "completions/zsh/sibling.bash" if build.with? "completions"
+  end
+
+  test do
+    system "#{bin}/fcpst --version"
+  done
+end
