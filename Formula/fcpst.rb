@@ -1,4 +1,4 @@
-VERSION="0.1.1"
+VERSION="0.1.4"
 PRODUCT="fcpst"
 
 class Fcpst < Formula
@@ -11,22 +11,22 @@ class Fcpst < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/clownUR/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_darwin_amd64.tar.gz"
-    sha256 "f4ab387e2e03c559140a970497d90c0ae4e653fe80509647e7ce1b4df3ee3889"
+    sha256 "c91c100f4cbb925a629063cb7dbf2f9cb0e7b3acee56f58fc8622d79e2b0ea63"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/clownUR/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_darwin_arm64.tar.gz"
-    sha256 "cb674e3facf3831a20cf1be9363f935f13205f604e672d4a8204228cd544fed4"
+    sha256 "9a46d1e738eb10669f085d3c1ba08c4275e13a573d3bbd92afdf5dc9f4ed48bb"
   end
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/clownUR/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_linux_amd64.tar.gz"
-    sha256 "3be99051d6e2b039b0b91e47edba926676ea4b864727bf7eb960b88f8ec6affb"
+    sha256 "61a7d4516b7ff79f97d8845f157df4fb46f7542b01491e22e82f0ae1fa916fc0"
   end
 
   if OS.linux? && Hardware::CPU.arm?
     url "https://github.com/clownUR/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_linux_arm64.tar.gz"
-    sha256 "334a660d3c5ab128d5f0712cacb60a032a85b1909949ba15fcf0a6f5023ea9d3"
+    sha256 "53c27f80d4797f0e2eaf252c116a7901551640c12a5bddb8c642a4e9a0491d0e"
   end
 
   def install
